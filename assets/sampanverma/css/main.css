@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat.ttf"); }
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.ttf"); }
+
+@font-face {
+  font-family: "Raleway Black";
+  src: url("../fonts/Raleway-Black.ttf"); }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+html, body {
+  height: 100%; }
+
+body {
+  background: #101038;
+  overflow: hidden; }
+
+ul.menu {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-top: 100px;
+  margin-left: 20px;
+  list-style: none;
+  z-index: -100; }
+  ul.menu li {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    ul.menu li a {
+      color: #22236d;
+      text-decoration: none; }
+      ul.menu li a:hover {
+        color: #3436a2; }
+
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .page.closed {
+    top: -100vh;
+    z-index: -10; }
+  .page.scaled {
+    left: 7vw;
+    -webkit-transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8); }
+  .page a.nav {
+    margin-left: 20px;
+    color: black; }
+    .page a.nav i {
+      margin-top: 10px;
+      font-size: 45px; }
+
+.profile-card {
+  width: 25%;
+  margin: 0 auto;
+  padding-top: 9vh;
+  text-align: center;
+  vertical-align: middle; }
+  .profile-card .profile-image {
+    border-radius: 1000px;
+    overflow: hidden; }
+    .profile-card .profile-image img {
+      width: 100%; }
+  .profile-card .profile-name {
+    font-family: "Raleway Black";
+    font-size: 40px;
+    text-transform: uppercase; }
+  .profile-card .profile-description {
+    font-family: "Raleway";
+    font-size: 20px; }
+
+.project-slider {
+  margin-top: 10vh;
+  margin-left: 0vw;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .project-slider a {
+    text-decoration: none;
+    color: black; }
+    .project-slider a .project-image {
+      display: inline-block;
+      margin-left: 50px; }
+      .project-slider a .project-image img {
+        width: 400px;
+        margin: 0px;
+        padding: 0px;
+        vertical-align: middle; }
+
+.contact-columns {
+  width: 100%; }
+  .contact-columns.first {
+    margin-top: 30vh; }
+  .contact-columns .half-column {
+    font-family: "Raleway";
+    font-size: 36px;
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    .contact-columns .half-column.bold {
+      font-family: "Raleway Black"; }
+    .contact-columns .half-column.bold:hover {
+      text-decoration: underline; }

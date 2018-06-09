@@ -1,0 +1,136 @@
+@import "fonts";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    height:100%;
+}
+
+body{
+    background:rgb(16,16,56);
+    overflow: hidden;
+}
+
+ul.menu{
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-size:25px;
+    margin-top:100px;
+    margin-left:20px;
+    list-style: none;
+    z-index:-100;
+    li{
+        margin-top:20px;
+        margin-bottom:20px;
+        a{
+            color:rgb(34,35,109);
+            text-decoration: none;
+            &:hover{
+                color:rgb(52,54,162);
+            }
+        }
+    }
+}
+
+.page{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: white;
+    box-shadow: 0px 0px 20px 2px rgba(black, 0.3);
+    z-index:100;
+    overflow: hidden;
+    transition:all 0.2s ease;
+    &.closed{
+        //display: none;
+        top:-100vh;
+        z-index:-10;
+    }
+    &.scaled{
+        //top:-7vh;
+        left:7vw;
+        transform: scale(0.8, 0.8);
+    }
+    a.nav{
+        margin-left:20px;
+        color:black;
+        i{
+            margin-top:10px;
+            font-size:45px;
+        }
+    }
+}
+
+
+.profile-card{
+    width: 25%;
+    margin:0 auto;
+    padding-top:9vh;
+    text-align: center;
+    vertical-align: middle;
+    .profile-image{
+        border-radius: 1000px;
+        overflow: hidden;
+        img{
+            width:100%;
+        }
+    }
+    .profile-name{
+        font-family: "Raleway Black";
+        font-size:40px;
+        text-transform: uppercase;
+    }
+    .profile-description{
+        font-family: "Raleway";
+        font-size:20px;
+    }
+}
+
+.project-slider{
+    margin-top:10vh;
+    margin-left:0vw;
+    
+    transition:all 0.2s ease;
+
+    //background:blueviolet;
+    a{
+        text-decoration:none;
+        color:black;
+        .project-image{
+            display: inline-block;
+            margin-left:50px;
+            img{
+                width:400px;
+                margin:0px;
+                padding:0px;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+.contact-columns{
+    width:100%;
+    &.first{
+        margin-top:30vh;
+    }
+    .half-column{
+        font-family: "Raleway";
+        font-size:36px;
+        display: inline-block;
+        width:45%;
+        text-align:center;
+        transition:all 0.2s ease;
+        &.bold{
+            font-family: "Raleway Black";
+        }
+        &.bold:hover{
+            text-decoration:underline;
+        }
+    }
+}
