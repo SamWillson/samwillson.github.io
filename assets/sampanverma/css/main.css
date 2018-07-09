@@ -88,9 +88,8 @@ ul.menu {
 .project-slider {
   margin-top: 10vh;
   margin-left: 0vw;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
+  
+}
   .project-slider a {
     text-decoration: none;
     color: black; }
@@ -120,3 +119,25 @@ ul.menu {
       font-family: "Raleway Black"; }
     .contact-columns .half-column.bold:hover {
       text-decoration: underline; }
+.almanac-title{
+  margin-bottom: 30px;
+}
+.note{
+  width:400px;
+  margin-bottom:100px;
+  text-align: justify;
+}
+.note .note-title{
+  font-weight: bolder;
+  font-size:20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.note .note-date{
+  margin-top:10px;
+  margin-bottom:10px;
+  text-align: center;
+}
+.page-almanac{
+  overflow: auto;
+}

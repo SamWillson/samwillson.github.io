@@ -1,0 +1,70 @@
+html(lang="en")
+    head
+        title Sampan Verma - Web Developer, Game Developer
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="assets/sampanverma/css/main.css")
+        link(rel="stylesheet", href="assets/materialicons/materialicons.css")
+        script(src="assets/jquery/jquery.min.js")
+        script(src="assets/sampanverma/js/script.js")
+    body
+   
+        ul.menu
+            li
+                a(href="#", open-page="intro") Home
+            li
+                a(href="#", open-page="almanac") Almanac
+            li
+                a(href="#", open-page="courses") Courses
+            li
+                a(href="#", open-page="projects") Projects
+            li
+                a(href="#", open-page="contact") Contact
+            div(style="height:50px;")
+            li
+                a(href="http://github.com/SamWillson", target="_blank") GitHub
+            
+        .page.page-intro
+            a.nav.toggle-menu(href="#")
+                i.material-icons menu
+            .profile-card
+                .profile-image
+                    img(src="assets/sampanverma/pyrocynical.png", alt="Pyrocynical Channel Art")
+                .profile-name Sampan Verma
+                .profile-description i make Websites
+        
+        .page.page-projects.closed
+            a.nav.toggle-menu(href="#")
+                i.material-icons menu
+            .project-slider
+                a(href="_project_link")
+                    div.project-image
+                        img(src="assets/sampanverma/highres/1.jpg")
+                a(href="_project_link")
+                    div.project-image
+                        img(src="assets/sampanverma/highres/2.jpg")
+                a(href="_project_link")
+                    div.project-image
+                        img(src="assets/sampanverma/highres/3.jpg")
+                a(href="_project_link")
+                    div.project-image
+                        img(src="assets/sampanverma/highres/4.jpg")
+                a(href="_project_link")
+                    div.project-image
+                        img(src="assets/sampanverma/highres/5.jpg")
+
+        .page.page-contact.closed
+            a.nav.toggle-menu(href="#")
+                i.material-icons menu
+            
+            .contact-columns.first
+                .half-column Drop a call at
+                .half-column Drop a message on
+                
+            .contact-columns
+                .half-column.bold (+91) 7888535324
+                .half-column.bold sampan.developer@gmail.com
+            
+            
+            
